@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light&display=swap');
+
+*{
+    box-sizing: border-box; /*makes padding easier*/
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Typography
+======================== */
+
+h1{
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.head-desc{
+    font-size: 1.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.head-desc span {
+    font-size: 2.rem;
+    font-weight: 300;
+    display: block;
+}
+
+@media (min-width:60rem) {
+    .head-desc {
+        font-size:3rem;
+    }
+}
+
+
+/* Buttons 
+    ==================*/
+
+.button{
+    display: inline-block;
+    padding: .5em 1.5em;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    color: rgb(233, 199, 90);
+    border-color: rgb(233, 199, 90);
+}
+
+
+.button:hover,
+.button:focus{
+    background: rgb(233, 199, 90);
+    color: #4d3015;
+}
+
+@media(min-width:60rem) {
+    .button{
+        font-size: 1.5rem;
+    }
+}
+
+/* Header */
+
+header{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 1em;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a{
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: .75em;
+}
+
+nav a:hover, nav a:focus{
+    color: #DDD;
+}
+
+
+@media (min-width:60rem) {
+    .logo{
+        float: left;
+        padding: .75em;
+    }
+
+    nav{
+        float: right;
+    }
+}
+
+/* Header */
+.home-hero{
+    background-image: url(/foodporn/food-background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #FFF;
+}
+
+@media(min-width:60rem) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+
+
+
+/* About  */
+
+.home-about-textbox {
+    color: rgb(145, 70, 52);
+    background-color: rgb(255, 223, 164);
+    padding: 4em;
+    width: 100vw;
+    margin-left: -4.1%;
+    outline: 2px solid rgb(145, 70, 52);
+    outline-offset: -2.5em;
+    position: relative;
+    padding-top: 5em;
+}
+
+.home-about-textbox h1{
+    color:rgb(145, 70, 52);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1em;
+    padding: 0 .2em;
+    background: rgb(255, 223, 164);
+}
+
+
+
+
